@@ -69,6 +69,7 @@ def window(value):
     return {
         "used_percent": int(value.get("usedPercent", 0)),
         "resets_at": display_time(value.get("resetsAt")),
+        "resets_at_epoch": value.get("resetsAt"),
     }
 
 
@@ -79,6 +80,7 @@ def update_file(result):
         "five_hour": window(limits.get("primary")),
         "weekly": window(limits.get("secondary")),
         "updated_at": datetime.datetime.now().astimezone().strftime("%Y-%m-%d %H:%M"),
+        "updated_at_epoch": int(datetime.datetime.now().timestamp()),
     }
     OUTPUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n")
     return payload

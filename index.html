@@ -9,18 +9,22 @@
 </head>
 <body>
   <main>
-    <header><h1>CODEX</h1><span id="plan">--</span></header>
+    <header class="clock">
+      <strong id="clock-time">--:--</strong>
+      <span id="clock-date">--月--日</span>
+    </header>
+    <div class="brand"><h1>CODEX</h1><span id="plan">--</span></div>
     <section class="quota">
-      <div class="label"><strong>5 小时</strong><span id="five-percent">--%</span></div>
+      <div class="label"><strong>5 小时额度</strong><span>剩余 <b id="five-percent">--%</b></span></div>
       <div class="bar"><i id="five-bar"></i></div>
-      <p>重置：<span id="five-reset">--</span></p>
+      <p id="five-reset">--</p>
     </section>
     <section class="quota">
-      <div class="label"><strong>每周</strong><span id="week-percent">--%</span></div>
+      <div class="label"><strong>每周额度</strong><span>剩余 <b id="week-percent">--%</b></span></div>
       <div class="bar"><i id="week-bar"></i></div>
-      <p>重置：<span id="week-reset">--</span></p>
+      <p id="week-reset">--</p>
     </section>
-    <footer>更新于 <span id="updated">--</span></footer>
+    <footer><b id="health-mark">●</b> <span id="health">等待数据</span> · <span id="updated">--</span></footer>
     <p id="error" class="error"></p>
   </main>
   <script src="app.js"></script>
