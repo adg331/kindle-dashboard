@@ -10,10 +10,10 @@
   }
   function pad(value) { return value < 10 ? '0' + value : String(value); }
   function updateClock() {
-    var now = new Date();
+    var now = new Date(new Date().getTime() + 8 * 60 * 60 * 1000);
     var days = ['日', '一', '二', '三', '四', '五', '六'];
-    text('clock-time', pad(now.getHours()) + ':' + pad(now.getMinutes()));
-    text('clock-date', (now.getMonth() + 1) + '月' + now.getDate() + '日 周' + days[now.getDay()]);
+    text('clock-time', pad(now.getUTCHours()) + ':' + pad(now.getUTCMinutes()));
+    text('clock-date', (now.getUTCMonth() + 1) + '月' + now.getUTCDate() + '日 周' + days[now.getUTCDay()]);
   }
   function countdown(timestamp, fallback) {
     if (!timestamp) { return '重置：' + (fallback || '--'); }
