@@ -22,3 +22,19 @@
 ```
 
 不要向仓库提交 OAuth token、API key、Cookie 或 Codex 登录文件。Public GitHub Pages 中的 `quota.json` 对所有人可见。
+
+## 从当前 Mac 更新配额
+
+只更新本地文件：
+
+```bash
+python3 scripts/update_codex_quota.py
+```
+
+更新后提交到 GitHub Pages：
+
+```bash
+python3 scripts/update_codex_quota.py --publish
+```
+
+脚本通过本机 Codex `app-server` 的只读 `account/rateLimits/read` 方法读取百分比和重置时间，不读取或上传登录凭证。
