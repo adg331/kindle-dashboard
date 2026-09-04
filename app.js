@@ -1,4 +1,7 @@
 (function () {
+  if (/(^|[?&])rotate=180(&|$)/.test(window.location.search)) {
+    document.documentElement.className += ' rotate-180';
+  }
   function text(id, value) { document.getElementById(id).innerHTML = value; }
   function percent(value) {
     value = Number(value);

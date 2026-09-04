@@ -8,6 +8,10 @@
 
 `https://adg331.github.io/kindle-dashboard/`
 
+Kindle 上下颠倒放置时使用：
+
+`https://adg331.github.io/kindle-dashboard/?rotate=180`
+
 页面每 10 分钟重新加载一次，并读取 `data/quota.json`。页面只使用旧版浏览器兼容的 HTML、CSS 和 ES5 JavaScript。
 
 ## 数据格式
