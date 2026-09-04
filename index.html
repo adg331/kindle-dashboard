@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+  <meta http-equiv="refresh" content="600">
+  <title>Codex Quota</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header><h1>CODEX</h1><span id="plan">--</span></header>
+    <section class="quota">
+      <div class="label"><strong>5 小时</strong><span id="five-percent">--%</span></div>
+      <div class="bar"><i id="five-bar"></i></div>
+      <p>重置：<span id="five-reset">--</span></p>
+    </section>
+    <section class="quota">
+      <div class="label"><strong>每周</strong><span id="week-percent">--%</span></div>
+      <div class="bar"><i id="week-bar"></i></div>
+      <p>重置：<span id="week-reset">--</span></p>
+    </section>
+    <footer>更新于 <span id="updated">--</span></footer>
+    <p id="error" class="error"></p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
