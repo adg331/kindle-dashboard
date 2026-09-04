@@ -38,3 +38,7 @@ python3 scripts/update_codex_quota.py --publish
 ```
 
 脚本通过本机 Codex `app-server` 的只读 `account/rateLimits/read` 方法读取百分比和重置时间，不读取或上传登录凭证。
+
+## 每 30 分钟自动更新
+
+macOS `launchd` 配置模板位于 `deploy/com.adg331.kindle-dashboard.plist`。安装到 `~/Library/LaunchAgents/` 并加载后，每 1800 秒运行一次，登录 Mac 时立即运行一次。

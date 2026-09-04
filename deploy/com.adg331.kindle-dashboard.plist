@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.adg331.kindle-dashboard</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/zsh</string>
+    <string>-lc</string>
+    <string>/usr/bin/python3 /Users/dan/codex/project/kindle-dashboard/scripts/update_codex_quota.py --publish</string>
+  </array>
+  <key>WorkingDirectory</key>
+  <string>/Users/dan/codex/project/kindle-dashboard</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/Users/dan/.npm-global/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+  </dict>
+  <key>StartInterval</key>
+  <integer>1800</integer>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>StandardOutPath</key>
+  <string>/Users/dan/codex/project/kindle-dashboard/.logs/launchd.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/dan/codex/project/kindle-dashboard/.logs/launchd.err.log</string>
+</dict>
+</plist>
