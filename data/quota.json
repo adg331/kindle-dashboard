@@ -3,13 +3,13 @@
   "five_hour": {
     "used_percent": 100,
     "resets_at": "09-13 00:03",
-    "resets_at_epoch": 1789228991
+    "resets_at_epoch": 1789228990
   },
   "weekly": {
     "used_percent": 16,
     "resets_at": "09-19 19:03",
-    "resets_at_epoch": 1789815791
+    "resets_at_epoch": 1789815790
   },
-  "updated_at": "2026-09-12 23:01",
-  "updated_at_epoch": 1789225318
+  "updated_at": "2026-09-12 23:32",
+  "updated_at_epoch": 1789227125
 }
