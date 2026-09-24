@@ -2,14 +2,14 @@
   "plan": "Plus",
   "five_hour": {
     "used_percent": 0,
-    "resets_at": "09-25 03:35",
-    "resets_at_epoch": 1790278526
+    "resets_at": "09-25 04:05",
+    "resets_at_epoch": 1790280336
   },
   "weekly": {
     "used_percent": 26,
     "resets_at": "09-30 16:21",
     "resets_at_epoch": 1790756506
   },
-  "updated_at": "2026-09-24 22:35",
-  "updated_at_epoch": 1790260526
+  "updated_at": "2026-09-24 23:05",
+  "updated_at_epoch": 1790262336
 }
