@@ -6,10 +6,10 @@
     "resets_at_epoch": 1795789681
   },
   "weekly": {
-    "used_percent": 73,
-    "resets_at": "11-27 21:13",
-    "resets_at_epoch": 1795785196
+    "used_percent": 0,
+    "resets_at": "12-04 21:39",
+    "resets_at_epoch": 1796391550
   },
-  "updated_at": "2026-11-27 21:09",
-  "updated_at_epoch": 1795784943
+  "updated_at": "2026-11-27 21:39",
+  "updated_at_epoch": 1795786750
 }
